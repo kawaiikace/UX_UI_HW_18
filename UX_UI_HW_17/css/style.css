@@ -1,0 +1,54 @@
+.inline-block {
+	display: inline-block;
+	vertical-align: top;
+	font-family: "Avenir";
+}
+.logo {
+	vertical-align: top;
+	text-align: center;
+	font-family: "Avenir";
+	font-weight: 850;
+	font-kerning: normal;
+	width: 23%;
+	padding: 1%;
+}
+.nav {
+	width: 73%;
+	padding: 1%;
+	
+}
+.ul {
+	width: 50%;
+	margin-left: auto;
+}
+.heroImg {
+	height: 600px;
+	padding: 25px;
+}
+.left {
+  float: left;
+  padding-right: 15px;
+}
+.right {
+  float: right;
+  padding-left: 15px;
+}
+.content {
+	width: 500px;
+	margin: 0 auto;
+}
+.footer {
+	text-align: left; 
+}
+.copyright {
+	text-align: center; 
+}
+.p {
+	font-family: "Avenir";
+}
+.button {
+	font-family: "Avenir";
+}
+.h2 {
+	font-family: "Gelica Light";
+}
