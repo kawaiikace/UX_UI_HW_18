@@ -1,0 +1,93 @@
+.inline-block {
+  vertical-align: top;
+  font-family: "Avenir";
+  padding: 1%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  bottom: 1;
+}
+.logo, .no-wrap {
+  font-family: "Avenir";
+  font-weight: 850;
+  font-kerning: normal;
+  width: 15%;
+  white-space: nowrap;
+  cursor: pointer;
+	
+}
+.nav {
+  width: 99%;
+  padding: 1%;
+}
+.top-right {
+  position: absolute;
+  top: 0;
+  bottom: 1;
+  right: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+img {
+  max-width: 50%;
+  height: auto;
+}
+.heroImg {
+  height: 600px;
+  padding: 25px;
+}
+.content {
+  width: 500px;
+  margin: 0 auto;
+}
+.footer {
+  text-align: left;
+}
+.copyright {
+  text-align: center;
+}
+.p, .button, .body-text, .copyright {
+  font-family: "Avenir";
+}
+.header-two {
+  font-family: "Gelica ExtraLight";
+  font-weight: 100;
+}
+.button, .resume {
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 300;
+}
+.email {
+  background-color: #171618;
+  color: white;
+}
+.resume {
+  background-color: #E8D7FF;
+  color: #171618;
+}
+.linkedin, .work {
+  color: #8B38FF;
+  text-decoration: none;
+}
+.copyright {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
