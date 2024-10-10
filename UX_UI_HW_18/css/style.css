@@ -1,7 +1,7 @@
+/* Home Page CSS */
 .inline-block {
   vertical-align: top;
   font-family: "Avenir";
-  padding: 1%;
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
@@ -9,15 +9,16 @@
   padding-left: 15px;
   cursor: pointer;
   bottom: 1;
+  padding-top: 3px;
 }
 .logo, .no-wrap {
   font-family: "Avenir";
   font-weight: 850;
   font-kerning: normal;
-  width: 15%;
+  width: 150px;
   white-space: nowrap;
   cursor: pointer;
-	
+  margin-top: 10px;
 }
 .nav {
   width: 99%;
@@ -28,6 +29,24 @@
   top: 0;
   bottom: 1;
   right: 0;
+}
+.links {
+  text-decoration: none;
+  font-family: Avenir;
+  color: black;
+}
+a:hover {
+	color: #8B38FF;
+}
+.purpleIconsBee {
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.purpleIconsWiggle {
+  height: 10px;
+  margin: 0;
+  padding: 0;
 }
 .container {
   display: flex;
@@ -40,13 +59,18 @@
   flex-direction: column;
   align-items: flex-start;
 }
-img {
+.profile {
   max-width: 50%;
   height: auto;
+  padding: 40px;
 }
 .heroImg {
-  height: 600px;
-  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .content {
   width: 500px;
@@ -54,6 +78,15 @@ img {
 }
 .footer {
   text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.body-text {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.button, .email {
+  margin-left: 15px;
 }
 .copyright {
   text-align: center;
@@ -64,6 +97,8 @@ img {
 .header-two {
   font-family: "Gelica ExtraLight";
   font-weight: 100;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .button, .resume {
   border: none;
@@ -71,6 +106,10 @@ img {
   padding: 10px 20px;
   cursor: pointer;
   font-weight: 300;
+  margin-left: 15px;
+}
+button:hover {
+  opacity: 0.8; 
 }
 .email {
   background-color: #171618;
@@ -80,9 +119,13 @@ img {
   background-color: #E8D7FF;
   color: #171618;
 }
-.linkedin, .work {
+.linkedin {
   color: #8B38FF;
   text-decoration: none;
+  cursor: pointer;
+}
+.linkedin:hover {
+  text-decoration: underline;
 }
 .copyright {
   margin-top: auto;
@@ -90,4 +133,172 @@ img {
   padding: 10px;
   position: relative;
   width: 100%;
+}
+/* My UX Skills Page CSS */
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  gap: 20px;
+}
+.skills {
+  width: 33%;
+}
+.skillsParagraph {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+.one {
+  background-color: #E8D7FF;
+  border-radius: 15px;
+}
+.two {
+  background-color: #FFFAD7;
+  border-radius: 15px;
+}
+.three {
+  background-color: #D7EDFF;
+  border-radius: 15px;
+}
+h3 {
+  font-family: "Gelica ExtraLight";
+  font-weight: 100;
+  padding-left: 10%;
+  width: 300px !important;
+}
+h1 {
+  font-family: "Gelica ExtraLight";
+  font-weight: 100;
+  text-align: center;
+  padding: 1%;
+}
+.icon {
+  align-content: center;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+p {
+  font-family: "Avenir";
+}
+/* My Work Page CSS */
+.workGrid {
+  display: grid;
+}
+.caseStudy {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.caseStudyDescription {
+  padding-bottom: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.readMore {
+  display: inline-flex;
+  align-items: center; 
+  padding-bottom: 10%
+}
+.readMore button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300px;
+  width: 200px;
+  padding-left: 40px;
+}
+.arrowIcon {
+  height: 20px;
+  margin-left: 10px;
+}
+.pbj {
+  grid-area: pbj;
+  background-color: #D7EDFF;
+  border-radius: 20px;
+}
+.ed {
+  grid-area: ed;
+  background-color: #E8D7FF;
+  border-radius: 20px;
+}
+.sq {
+  grid-area: sq;
+  background-color: #FFFAD7;
+  border-radius: 20px;
+}
+.chomp {
+  grid-area: chomp;
+  background-color: #E6FFD7;
+  border-radius: 20px;
+}
+button {
+  background: none;
+  border: none;
+  font-family: "Avenir";
+  cursor: pointer;
+  text-align: inherit;
+  padding-left: 10%;
+}
+.workGrid {
+  display: grid;
+  grid-template-areas:
+    "pbj sq"
+    "chomp ed";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+  gap: 20px;
+}
+.moreProjects {
+  align-text: center;
+}
+/* Mobile Media Query*/
+@media (max-width: 600px) {
+  /* Media Query Work Page*/
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-areas:
+      "pbj"
+      "sq"
+      "chomp"
+      "ed";
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 20px;
+  }
+  /* Media Query Skills Page*/
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+  }
+  .skills {
+    width: 100%;
+  }
+  /* Media Query Home Page*/
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profile {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .heroImg {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .content {
+    width: 100%;
+    margin: 0 10px;
+  }
 }
